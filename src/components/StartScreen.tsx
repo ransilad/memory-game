@@ -1,14 +1,14 @@
-import { FC } from "react";
-import { useGameStore } from "../store";
+import { FC } from 'react'
+import { useGameStore } from '../store'
 
 const StartScreen: FC = () => {
-  const { playerName, setPlayerName, setGameStarted } = useGameStore();
+  const { playerName, setPlayerName, setGameStarted } = useGameStore()
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    localStorage.setItem('playerName', playerName);
-    setGameStarted(true);
-  };
+    e.preventDefault()
+    localStorage.setItem('playerName', playerName)
+    setGameStarted(true)
+  }
 
   return (
     <div className='w-full h-screen flex flex-col items-center justify-center'>
@@ -35,6 +35,6 @@ const StartScreen: FC = () => {
       </section>
     </div>
   )
-};
+}
 
-export default StartScreen;
+export default StartScreen
