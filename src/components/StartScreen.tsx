@@ -11,11 +11,11 @@ const StartScreen: FC = () => {
   }
 
   return (
-    <div className='w-full h-screen flex flex-col items-center justify-center'>
+    <div className='w-full h-svh flex flex-col items-center justify-center px-4'>
       <section className='w-full max-w-lg p-6 bg-zinc-900 rounded-xl shadow-2xl border border-zinc-800'>
         <form onSubmit={handleSubmit}>
           <h1 className='text-center text-2xl text-zinc-200 mb-10'>Ingrese su nombre</h1>
-          <p className='text-center text-zinc-400 mb-4 font-light text-sm px-6'>
+          <p className='text-center text-zinc-400 mb-4 font-light text-sm md:px-6'>
             ¡Hola! ¿Desea jugar memoria? Para ello, debe ingrese su nombre y luego hacer clic en el botón de "Jugar".
           </p>
           <input

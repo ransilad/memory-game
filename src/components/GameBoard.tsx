@@ -1,9 +1,10 @@
 import { FC } from 'react'
+import Score from './Score'
 
 const GameBoard: FC = () => {
   return (
-    <div>
-      <p>Test</p>
+    <div className='w-full max-w-3xl flex flex-col items-center mx-auto px-4'>
+      <Score />
     </div>
   )
 }

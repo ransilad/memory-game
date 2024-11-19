@@ -5,6 +5,10 @@ interface GameStore {
   setPlayerName: (name: string) => void
   gameStarted: boolean
   setGameStarted: (started: boolean) => void
+  matches: number
+  setMatches: (matches: number) => void
+  errors: number
+  setErrors: (errors: number) => void
 }
 
 export const useGameStore = create<GameStore>((set) => {
@@ -14,5 +18,9 @@ export const useGameStore = create<GameStore>((set) => {
     setPlayerName: (name: string) => set({ playerName: name }),
     gameStarted: !!currentPlayerName,
     setGameStarted: (started: boolean) => set({ gameStarted: started }),
+    matches: 0,
+    setMatches: (matches: number) => set({ matches: matches }),
+    errors: 0,
+    setErrors: (errors: number) => set({ errors: errors }),
   })
 })
