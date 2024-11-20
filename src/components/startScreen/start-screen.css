@@ -1,5 +1,5 @@
 .start-screen {
-  @apply w-full h-screen flex items-center justify-center px-4;
+  @apply w-full h-svh flex items-center justify-center px-4;
 }
 
 .start-screen__form-container {
