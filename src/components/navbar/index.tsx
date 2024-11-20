@@ -6,7 +6,7 @@ import './navbar.css'
 const Navbar = () => {
   const { matches, errors, playAgain } = useGameStore()
   return (
-    <div className='navbar'>
+    <div className='navbar' role='navbar'>
       <div className='navbar__stats'>
         <div className='navbar__stat'>
           <div className='navbar__stat-icon navbar__stat-icon--success' />

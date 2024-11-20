@@ -22,11 +22,12 @@ describe('StartScreen Component', () => {
     const input = screen.getByPlaceholderText('Ingrese su nombre')
     const button = screen.getByText('Jugar')
 
-    // Simula escribir en el input
+    // Simula escribir en el input el valor de Juan
     await act(async () => {
       await user.type(input, 'Juan')
     })
 
+    // Verifica que el botón está habilitado y que el input contenga el valor de Juan
     expect(input).toHaveValue('Juan')
     expect(button).toBeEnabled()
   })
