@@ -63,7 +63,7 @@ export const useGameStore = create<GameStore>((set) => ({
     return payload
   }),
   loadCards: async () => {
-    const res = await fetch('https://challenge-uno.vercel.app/api/images')
+    const res = await fetch(import.meta.env.VITE_IMAGES_URL)
     const images = await res.json()
     const duplicated = [...structuredClone(images), ...structuredClone(images)]
     const shuffled = duplicated.sort(() => Math.random() - 0.5)
