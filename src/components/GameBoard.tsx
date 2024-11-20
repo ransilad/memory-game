@@ -19,8 +19,8 @@ const GameBoard: FC = () => {
       <Score />
 
       {(cards.length > 0) && (
-        <>
-          <div className="flex flex-wrap justify-center gap-2 mt-6 mb-6">
+        <div className='w-full'>
+          <div className="grid grid-cols-5 sm:grid-cols-8 justify-center gap-2 mt-6 mb-6">
             {cards.map((card: ICard, index: number) => (
               <Card
                 key={index}
@@ -36,7 +36,7 @@ const GameBoard: FC = () => {
             onClick={playAgain}
             disabled={isLoading}
           >Jugar de nuevo</button>
-        </>
+        </div>
       )}
     </div>
   )
