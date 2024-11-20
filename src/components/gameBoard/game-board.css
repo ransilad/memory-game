@@ -1,0 +1,23 @@
+.game-board {
+  @apply w-full max-w-5xl flex flex-col items-center mx-auto px-4;
+}
+
+.game-board__loading {
+  @apply flex flex-col gap-2 items-center justify-center;
+}
+
+.game-board__loading-icon {
+  @apply text-white size-10 mt-10;
+}
+
+.game-board__loading-text {
+  @apply text-zinc-200 font-light;
+}
+
+.game-board__error {
+  @apply bg-red-900/40 text-white font-light p-4 rounded-md mt-10;
+}
+
+.game-board__cards {
+  @apply grid grid-cols-5 sm:grid-cols-8 justify-center gap-2 mt-6 mb-6 w-full;
+}

@@ -1,0 +1,39 @@
+.navbar {
+  @apply w-full rounded-full border border-zinc-800 bg-black/60 backdrop-blur-sm flex flex-row mt-4 px-4 py-2;
+}
+
+.navbar__stats {
+  @apply flex flex-row gap-4 text-white text-sm items-center;
+}
+
+.navbar__stat {
+  @apply flex flex-row gap-1 items-center;
+}
+
+.navbar__stat-icon {
+  @apply size-3 rounded-full;
+}
+
+.navbar__stat-icon--success {
+  @apply bg-green-500;
+}
+
+.navbar__stat-icon--error {
+  @apply bg-red-500;
+}
+
+.navbar__stat-value {
+  @apply px-2;
+}
+
+.navbar__stat-label {
+  @apply font-bold;
+}
+
+.navbar__separator {
+  @apply text-zinc-700 text-lg;
+}
+
+.navbar__exit-button {
+  @apply text-zinc-300 inline-flex items-center gap-2 ml-auto hover:text-white transition-all;
+}

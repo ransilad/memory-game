@@ -1,0 +1,19 @@
+.start-screen {
+  @apply w-full h-screen flex items-center justify-center px-4;
+}
+
+.start-screen__form-container {
+  @apply w-full max-w-lg p-6 bg-zinc-900 rounded-xl shadow-2xl border border-zinc-800;
+}
+
+.start-screen__form {
+  @apply flex flex-col items-center;
+}
+
+.start-screen__title {
+  @apply text-center text-2xl text-zinc-200 mb-10;
+}
+
+.start-screen__description {
+  @apply text-center text-zinc-400 mb-4 font-light text-sm md:px-6;
+}

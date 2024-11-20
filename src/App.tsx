@@ -1,6 +1,6 @@
-import GameBoard from './components/GameBoard'
-import StartScreen from './components/StartScreen'
-import VictoryScreen from './components/VictoryScreen'
+import GameBoard from './components/gameBoard'
+import StartScreen from './components/startScreen'
+import VictoryScreen from './components/victoryScreen'
 import { useGameStore } from './store'
 
 function App() {
