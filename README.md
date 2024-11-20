@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# Memory Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web que permite jugar una partida de memoria.
 
-Currently, two official plugins are available:
+## Pre-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (v20.18.0)
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- Tailwind CSS
+- Zustand
+- Vite
 
-- Configure the top-level `parserOptions` property like this:
+## Como ejecutar el proyecto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clonar el repositorio
+2. Agregar en la raiz del proyecto el archivo `.env` con las variables de entorno
+
+```
+VITE_IMAGES_URL=
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Instalar las dependencias
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+4. Iniciar el servidor de desarrollo
+
+```bash
+npm run dev
+```
+
+5. Abrir el navegador en `http://localhost:5173`
+
+## Despliegue
+
+Para el despliegue de este proyecto se usó la plataforma unificada en la nube [Vercel](https://vercel.com/), la cual permite a los desarrolladores desplegar, gestionar y escalar sus aplicaciones y sitios web de una manera fácil y así poder preocuparse más por el desarrollo y no por la infraestructura.
