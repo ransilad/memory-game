@@ -71,6 +71,6 @@ export const useGameStore = create<GameStore>((set) => ({
   },
   playAgain: () => set(() => {
     localStorage.removeItem('playerName')
-    return { ...initialState }
+    return { ...initialState, playerName: '', gameStarted: false }
   })
 }))
