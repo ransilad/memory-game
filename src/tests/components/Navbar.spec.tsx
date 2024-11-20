@@ -4,8 +4,8 @@ import { describe, expect, it } from 'vitest'
 
 import App from '../../App'
 
-describe('StartScreen Component', () => {
-  it('Should render the start screen correctly', async () => {
+describe('Navbar Component', () => {
+  it('Should render the navbar correctly', async () => {
     const user = userEvent.setup()
     render(<App />)
 
@@ -22,7 +22,7 @@ describe('StartScreen Component', () => {
     expect(screen.getByRole('navbar')).toBeInTheDocument()
   })
 
-  it('Should render the input screen when clicking on the exit button', async () => {
+  it('Should render the input screen when clicking on the exit button on the navbar', async () => {
     const user = userEvent.setup()
     render(<App />)
 

@@ -14,7 +14,7 @@ const VictoryScreen = () => {
   }, [])
 
   return (
-    <div className="victory-screen">
+    <div className="victory-screen" data-testid="victory-screen">
       <h3 className='victory-screen__title'>¡Felicidades!</h3>
       <p className='victory-screen__message'>
         <strong className='victory-screen__player-name'>{playerName}</strong> haz ganado la partida con

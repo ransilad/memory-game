@@ -9,6 +9,7 @@ interface CardProps {
 export const Card: React.FC<CardProps> = ({ image, isFlipped, onClick }) => {
   return (
     <div
+      data-testid="card"
       className="w-full aspect-square bg-zinc-900 flex items-center justify-center cursor-pointer rounded-md bg-cover bg-center"
       onClick={onClick}
       style={{ backgroundImage: isFlipped ? `url(${image})` : '' }}

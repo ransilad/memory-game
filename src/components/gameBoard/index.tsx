@@ -18,7 +18,7 @@ const GameBoard: FC = () => {
   }, [])
 
   return (
-    <div className='game-board'>
+    <div className='game-board' data-testid='game-board'>
       <Navbar />
 
       {isLoading && (
