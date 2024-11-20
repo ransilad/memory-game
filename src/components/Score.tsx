@@ -20,7 +20,7 @@ const Score = () => {
       </div>
       <button
         className='text-zinc-300 inline-flex items-center gap-2 ml-auto hover:text-white transition-all'
-        onClick={playAgain}
+        onClick={() => playAgain(true)}
       >
         <ExitIcon />
         Salir
