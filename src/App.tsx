@@ -4,12 +4,11 @@ import VictoryScreen from './components/VictoryScreen'
 import { useGameStore } from './store'
 
 function App() {
-  const { gameStarted, matches, cards } = useGameStore()
+  const { gameStarted, cards } = useGameStore()
   return (
     <>
-      {!gameStarted && <StartScreen />}
-      {gameStarted && <GameBoard />}
-      {matches!== 0 && matches === (cards.length / 2) && <VictoryScreen />}
+      {gameStarted ? <GameBoard /> : <StartScreen />}
+      {cards.every((card) => card.isFound) && <VictoryScreen />}
     </>
   )
 }

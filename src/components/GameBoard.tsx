@@ -6,7 +6,7 @@ import { Card } from './Card'
 import { ICard } from '../interfaces/ICard'
 
 const GameBoard: FC = () => {
-  const { cards, loadCards, setIsFlipped, playAgain, isLoading } = useGameStore()
+  const { cards, loadCards, setIsFlipped } = useGameStore()
 
   useEffect(() => {
     loadCards()
@@ -19,23 +19,15 @@ const GameBoard: FC = () => {
       <Score />
 
       {(cards.length > 0) && (
-        <div className='w-full'>
-          <div className="grid grid-cols-5 sm:grid-cols-8 justify-center gap-2 mt-6 mb-6">
-            {cards.map((card: ICard, index: number) => (
-              <Card
-                key={index}
-                image={card.url}
-                isFlipped={card.isFlipped || card.isFound}
-                onClick={() => setIsFlipped(index)}
-              />
-            ))}
-          </div>
-
-          <button
-            className='ml-auto w-fit px-4 py-2 mt-3 text-zinc-200 bg-zinc-800 rounded-lg border border-zinc-700 hover:bg-zinc-900 outline-none disabled:bg-zinc-700 disabled:opacity-20 disabled:cursor-not-allowed transition-all'
-            onClick={playAgain}
-            disabled={isLoading}
-          >Jugar de nuevo</button>
+        <div className="grid grid-cols-5 sm:grid-cols-8 justify-center gap-2 mt-6 mb-6 w-full">
+          {cards.map((card: ICard, index: number) => (
+            <Card
+              key={index}
+              image={card.url}
+              isFlipped={card.isFlipped || card.isFound}
+              onClick={() => setIsFlipped(index)}
+            />
+          ))}
         </div>
       )}
     </div>
