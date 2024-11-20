@@ -1,5 +1,5 @@
+import { ICard } from '@interfaces/ICard'
 import { create } from 'zustand'
-import { ICard } from './interfaces/ICard'
 
 interface GameStore {
   playerName: string
