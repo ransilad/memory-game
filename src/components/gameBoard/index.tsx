@@ -1,10 +1,10 @@
 import { FC, useEffect } from 'react'
 
-import { ICard } from '../../interfaces/ICard'
-import LoaderIcon from '../../icons/LoaderIcon'
-import { useGameStore } from '../../store'
+import { ICard } from '@interfaces/ICard'
+import LoaderIcon from '@icons/LoaderIcon'
+import Navbar from '@components/navbar'
+import { useGameStore } from '@store'
 import { Card } from './Card'
-import Navbar from '../navbar'
 
 import './game-board.css'
 

@@ -1,9 +1,10 @@
 import { FC } from 'react'
 
-import { useGameStore } from '../../store'
+import Button from '@components/shared/Button'
+import Input from '@components/shared/Input'
+import { useGameStore } from '@store'
+
 import './start-screen.css'
-import Input from '../shared/Input'
-import Button from '../shared/Button'
 
 const StartScreen: FC = () => {
   const { playerName, setPlayerName, setGameStarted } = useGameStore()

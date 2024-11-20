@@ -1,5 +1,6 @@
-import ExitIcon from '../../icons/ExitIcon'
-import { useGameStore } from '../../store'
+import ExitIcon from '@icons/ExitIcon'
+import { useGameStore } from '@store'
+
 import './navbar.css'
 
 const Navbar = () => {

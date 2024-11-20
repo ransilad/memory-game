@@ -1,9 +1,10 @@
 import { useEffect } from 'react'
-import { useGameStore } from '../../store'
 import confetti from 'canvas-confetti'
 
+import Button from '@components/shared/Button'
+import { useGameStore } from '@store'
+
 import './victory-screen.css'
-import Button from '../shared/Button'
 
 const VictoryScreen = () => {
   const { playerName, matches, errors, playAgain } = useGameStore()

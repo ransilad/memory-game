@@ -24,6 +24,15 @@
 
     /* Testing */
     "types": ["vitest", "@testing-library/jest-dom"],
+
+    /* Imports */
+    "baseUrl": ".",
+    "paths": {
+      "@interfaces/*": ["src/interfaces/*"],
+      "@icons/*": ["src/icons/*"],
+      "@store": ["src/store/index.ts"],
+      "@components/*": ["src/components/*"]
+    }
   },
   "include": ["src"]
 }
