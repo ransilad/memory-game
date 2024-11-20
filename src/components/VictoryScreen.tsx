@@ -1,7 +1,13 @@
+import { useEffect } from 'react'
 import { useGameStore } from '../store'
+import confetti from 'canvas-confetti'
 
 const VictoryScreen = () => {
   const { playerName, matches, errors, playAgain } = useGameStore()
+
+  useEffect(() => {
+    confetti()
+  }, [])
 
   return (
     <div className="flex flex-col items-center justify-center px-4 absolute inset-0 bg-zinc-950/80 backdrop-blur-sm z-10">
